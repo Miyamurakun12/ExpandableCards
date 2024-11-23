@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100lvh;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-items: center;
+    align-content: center;
+}
+#main{
+    height: 80%;
+    width:  90%;
+    display: flex;
+    gap: 10px;
+}
+
+.card{
+    height: 100%;
+    width: 5vw;
+    border-radius: 50px;
+    position: relative;
+    border: none;
+    min-width: 5vw;
+}
+.card h1{
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: #fff;
+}
+.card:focus{
+    width: 100%;
+}
+.card:focus h1{
+    display: initial;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
