@@ -33,6 +33,11 @@ html,body{
 }
 .card:focus{
     width: 100%;
+    transition: width 2s ;
+}
+.card:not(:focus){
+    width: 5vw;
+    transition: width 2s ;
 }
 .card:focus h1{
     display: initial;
